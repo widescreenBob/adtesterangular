@@ -1,0 +1,83 @@
+
+html, body
+  height: 100%
+  overflow: auto
+
+
+body
+  +background-image(linear-gradient($med-red, $dark-red))
+  +box-sizing(border-box)
+  padding: 1em
+  margin: 0
+  font-family: arial
+
+
+.main-contain
+  +background-image(linear-gradient(white, $parchment))
+  +box-sizing(border-box)
+  +border-radius(5px)
+  width: 95%
+  border: 5px solid $dark-red
+  margin: 0 auto
+  button
+    +sassy-button("matte", 10px, 19px, $med-red)
+    display: block
+    font-size: 3rem
+    font-weight: bold
+    margin: 0 auto
+    margin-top: 0.5em
+    margin-bottom: 0.5em
+    &:focus
+      outline: 0px
+  .header-text
+    width: 100%
+    +background-image(linear-gradient($light-blue, $blue))
+    text-align: center
+    border-bottom: 4px solid $dark-blue
+    font-family: $type-font
+    font-size: 4em
+    display: block
+    p
+      margin: 0
+      color: white
+    .type-of
+      display: block
+  div
+    display: block
+    img
+      width: 100%
+      height: auto
+      vertical-align: top
+    .bonus
+      width: 100%
+      +background-image(linear-gradient($light-blue, $blue))
+      font-size: 40px
+      color: white
+      text-align: center
+      padding: 1rem 0
+      margin: 0
+      border-bottom: 4px solid $dark-blue
+      border-top: 4px solid $dark-blue
+  .lower-list
+    h3
+      width: 100%
+      text-align: center
+      padding: 0.5em 0
+      margin: 0
+      font-size: 2em
+      background: $light-parchment
+      color: $blue
+    ul
+      margin: 0
+      padding: 0
+    li
+      list-style: none
+      padding: 0.5em 0
+      width: 100%
+      text-align: center
+      font-size: 2rem
+      color: #333
+      &.odd
+        background: $light-parchment
+      &.even
+        background: transparent

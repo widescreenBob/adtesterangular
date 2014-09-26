@@ -1,0 +1,14 @@
+$base: ".."
+
+=fontFace($family, $src, $weight: normal, $style: normal)
+  @font-face
+    font-family: $family
+    src: url("#{$base}/fonts/#{$src}.eot")
+    // IE9 compat
+    src: url("#{$base}/fonts/#{$src}.eot?#iefix") format("embedded-opentype"), url("#{$base}/fonts/#{$src}.woff") format("woff"), url("#{$base}/fonts/#{$src}.ttf") format("truetype"), url("#{$base}/fonts/#{$src}.svg") format("svg")
+    // legacy iOS
+    font-style: $style
+    font-weight: $weight
+
++fontFace(typewriter, typewriter/typewriter)
++fontFace(NFL-ClubSites-Icons, nflicons/NFL-ClubSites-Icons)
